@@ -427,7 +427,7 @@ klik https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] }
 	    else if (stage == stage2) tie = true
 	    hisoka.sendText(roof.asal, `_*Hasil Suit*_${tie ? '\nSERI' : ''}
 
-@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Menang \n` : ` Kalah \n`}
+@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Menang \n` : ` Klah \n`}
 @${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Menang \n` : ` Kalah \n`}
 `.trim(), m, { mentions: [roof.p, roof.p2] })
 	    delete this.suit[roof.id]
@@ -559,11 +559,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a7dcb02b888ae8685845a.png' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6285748893171 (Owner)\n\nDonate For Me : \n\n⭔ Dana : 085748894171\n⭔ Saweria : https://saweria.co/Nakata` }, { quoted: m })
-            }
+                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 7k Per Group via E-Walet permanen\n⭔ 10k via pulsa permanen\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\n⭔ Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n⭔ ovo/gopay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
+            } 
             break
             case 'sc': {
-                reply('Script : https://github.com/Nakataaard/MD2\n\n Dont Forget Give Star\n\nDonate : 6285748894171 (Dana)\nSaweria : https://saweria.co/Nakata\n\n Dont Forget Donate')
+                reply('Script : https://github.com/manzofc/manzmd2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\nGopay/Ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
