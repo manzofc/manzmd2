@@ -25,7 +25,7 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 let btn = [{
                                 urlButton: {
                                     displayText: `Github`,
-                                    url: `https://github.com/Nakataaard`
+                                    url: `https://github.com/manzofc`
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1154,7 +1154,7 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Nakataaard/MD2'
+                                    url: 'https://github.com/manzofc/MD2'
                                 }
                             }, {
                                 callButton: {
@@ -3146,7 +3146,7 @@ let sectionnya= [{
 								]
 							}
 						]
-hisoka.sendList(m.chat, `Halo ${pushname}`, `â”€â”€â”€â‘ INFO BOT
+hisoka.sendList(m.chat, `Halo ${pushname}`, `INFO BOT
 
 LIBRAY:  *MANZ  MD*`, "MANZ", "List Bot ", sectionnya, { quoted: m})
 break
