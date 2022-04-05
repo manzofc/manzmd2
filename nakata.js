@@ -1,4 +1,3 @@
-
 /**
    * Gunakan Dengan Bijak dan jangan jual !!! 
    
@@ -560,11 +559,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n 7k Per Group via E-Walet 1 Month\n 10k via pulsa 1 Month\n\n Premium Price Bot\n 2k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\ Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n Gopay/ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\nâ­” 13k Per Group via E-Walet 1 Tahun\nâ­” 10k via pulsa 1 Tahun\n\n Premium Price Bot\nâ­” 1k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\nâ­” Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\nâ­” Allpay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
             }
             break
             case 'sc': {
-                reply('Script : https://github.com/manzofc/manzmd2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\ndana/gopay/ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n\n Dont Forget Donate')
+                reply('Script : https://github.com/Nakataaard/MD2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\nAlpay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg')
             }
             break
             case 'chat': {
@@ -1238,7 +1237,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 857-0727-8351'
+                                    phoneNumber: '+62 857-4889-4171'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1256,7 +1255,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `Broadcast Bot\n\n${text}`
+                      let txt = `ã€Œ Broadcast Bot ã€\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
 		}
 		reply('Sukses Broadcast')
@@ -2655,11 +2654,11 @@ m.reply(`ðŸ‘·Translate : ${Detek}\nðŸ”ŽHasil : ${Infoo}`)
 case 'donasi':
 tekssa = `Halo @${m.sender.split("@s.whatsapp.net")[0]} ðŸ‘‹
 Berikut adalah list harga untuk sewa bot ini
-*Payment*
-*Gopay:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*Dana:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*Ovo:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*Pulsa:* 083830930651
+*ðŸ’¸PaymentðŸ’°*
+*â€¢Gopay:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*â€¢Dana:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*â€¢Ovo:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*â€¢Pulsa:* 083830930651(Up +5)
 
 *Note:
 =>Untuk Sewa/Memasukkan Bot Kedalam Group, cukup membayar Rp7.000
@@ -2671,10 +2670,10 @@ break
             case 'list': case 'menu': case 'help': case '?': {
             	pref = 1
                 anu = `
- *Bot Info*    
+â•­â”€ *Bot Info* â”€â•®       
 
 Libray : *Baileys Multi Device*
-Name Bot : *Manz-MD*
+Name Bot : *ManzBot-MDÂ²*
 Creator : *Manz*
 Author : *NakataArdnta.*
 User Total : *${Object.keys(global.db.data.users).length}*
@@ -3147,7 +3146,7 @@ let sectionnya= [{
 								]
 							}
 						]
-hisoka.sendList(m.chat, `Halo ${pushname}`, INFO BOT
+hisoka.sendList(m.chat, `Halo ${pushname}`, `â”€â”€â”€â‘ INFO BOT
 
 LIBRAY:  *Manz  MD*`, "Nakataa", "List Bot ", sectionnya, { quoted: m})
 break
