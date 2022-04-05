@@ -18,7 +18,7 @@ global.APIKeys = {
 
 // Other
 global.owner = ['6283830930651','6283830930651']
-global.web = 'https://youtube.com/channel/UC2hMC3YSXSrDDhqOECXZkUg'
+global.web = 'https://github.com/manzofc/manzmd2'
 global.bot = 'MANZ-MD²'
 global.premium = ['6283830930651']
 global.packname = 'manz'
