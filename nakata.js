@@ -1,3 +1,4 @@
+
 /**
    * Gunakan Dengan Bijak dan jangan jual !!! 
    
@@ -163,7 +164,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
-        reply(`ANTI LINK \n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
+        reply(`ã€Œ ANTI LINK ã€\n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
         if (!isBotAdmins) return reply(`Jadiin admin dulu bjir`)
         let gclink = (`https://chat.whatsapp.com/`+await hisoka.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
@@ -559,11 +560,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\ 7k Per Group via E-Walet 1 Tahun\10k via pulsa 1 Tahun\n\n Premium Price Bot\1k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\nAllpay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n 7k Per Group via E-Walet 1 Month\n 10k via pulsa 1 Month\n\n Premium Price Bot\n 2k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\ Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n Gopay/ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
             }
             break
             case 'sc': {
-                reply('Script :  https://github.com/manzofc/manzmd2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\nAllpay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n\n Dont Forget Donate')
+                reply('Script : https://github.com/manzofc/manzmd2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\ndana/gopay/ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -1237,7 +1238,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 857-4889-4171'
+                                    phoneNumber: '+62 857-0727-8351'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1255,7 +1256,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `ã€Œ Broadcast Bot ã€\n\n${text}`
+                      let txt = `Broadcast Bot\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
 		}
 		reply('Sukses Broadcast')
@@ -2654,11 +2655,11 @@ m.reply(`ðŸ‘·Translate : ${Detek}\nðŸ”ŽHasil : ${Infoo}`)
 case 'donasi':
 tekssa = `Halo @${m.sender.split("@s.whatsapp.net")[0]} ðŸ‘‹
 Berikut adalah list harga untuk sewa bot ini
-*ðŸ’¸PaymentðŸ’°*
-*â€¢Gopay:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*â€¢Dana:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*â€¢Ovo:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*â€¢Pulsa:* 083830930651(Up +5)
+*Payment*
+*Gopay:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*Dana:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*Ovo:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*Pulsa:* 083830930651
 
 *Note:
 =>Untuk Sewa/Memasukkan Bot Kedalam Group, cukup membayar Rp7.000
@@ -2670,327 +2671,327 @@ break
             case 'list': case 'menu': case 'help': case '?': {
             	pref = 1
                 anu = `
-â•­â”€ *Bot Info* â”€â•®       
+ *Bot Info*    
 
 Libray : *Baileys Multi Device*
 Name Bot : *Manz-MD*
 Creator : *Manz*
-Author : *Manz.*
+Author : *NakataArdnta.*
 User Total : *${Object.keys(global.db.data.users).length}*
  
 â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
 
 â”Œâ”€â”€â”€â‘ *Group Menu*
 
-${pref++} ${prefix}linkgroup
-${pref++} ${prefix}ephemeral [option]
-${pref++} ${prefix}setppgc [image]
-${pref++} ${prefix}setname _<Text>_
-${pref++} ${prefix}setdesc _<Text>_
-${pref++} ${prefix}group [option]
-${pref++} ${prefix}editinfo [option]
-${pref++} ${prefix}add @user
-${pref++} ${prefix}kick @user
-${pref++} ${prefix}hidetag _<Text>_
-${pref++} ${prefix}tagall _<Text>_
-${pref++} ${prefix}antilink _<On/Off>_
-${pref++} ${prefix}mute _<On/Off>_
-${pref++} ${prefix}promote @user
-${pref++} ${prefix}demote @user
-${pref++} ${prefix}vote _<Text>_
-${pref++} ${prefix}devote
-${pref++} ${prefix}upvote
-${pref++} ${prefix}cekvote
-${pref++} ${prefix}hapusvote
+â‰» ${pref++} ${prefix}linkgroup
+â‰» ${pref++} ${prefix}ephemeral [option]
+â‰» ${pref++} ${prefix}setppgc [image]
+â‰» ${pref++} ${prefix}setname _<Text>_
+â‰» ${pref++} ${prefix}setdesc _<Text>_
+â‰» ${pref++} ${prefix}group [option]
+â‰» ${pref++} ${prefix}editinfo [option]
+â‰» ${pref++} ${prefix}add @user
+â‰» ${pref++} ${prefix}kick @user
+â‰» ${pref++} ${prefix}hidetag _<Text>_
+â‰» ${pref++} ${prefix}tagall _<Text>_
+â‰» ${pref++} ${prefix}antilink _<On/Off>_
+â‰» ${pref++} ${prefix}mute _<On/Off>_
+â‰» ${pref++} ${prefix}promote @user
+â‰» ${pref++} ${prefix}demote @user
+â‰» ${pref++} ${prefix}vote _<Text>_
+â‰» ${pref++} ${prefix}devote
+â‰» ${pref++} ${prefix}upvote
+â‰» ${pref++} ${prefix}cekvote
+â‰» ${pref++} ${prefix}hapusvote
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Downloader Menu*
 
-${pref++} ${prefix}tiktoknowm _<url>_
-${pref++} ${prefix}tiktokwm _<url>_
-${pref++} ${prefix}tiktokmp3 _<url>_
-${pref++} ${prefix}instagram _<url>_
-${pref++} ${prefix}twitter _<url>_
-${pref++} ${prefix}twittermp3 _<url>_
-${pref++} ${prefix}facebook _<url>_
-${pref++} ${prefix}pinterestdl _<url>_
-${pref++} ${prefix}ytmp3 _<url>_
-${pref++} ${prefix}ytmp4 _<url>_
-${pref++} ${prefix}getmusic _<Query>_
-${pref++} ${prefix}getvideo _<Query>_
-${pref++} ${prefix}umma _<url>_
-${pref++} ${prefix}joox _<Query>_
-${pref++} ${prefix}soundcloud _<url>_
-${pref++} ${prefix}ytsearch2
+â‰» ${pref++} ${prefix}tiktoknowm _<url>_
+â‰» ${pref++} ${prefix}tiktokwm _<url>_
+â‰» ${pref++} ${prefix}tiktokmp3 _<url>_
+â‰» ${pref++} ${prefix}instagram _<url>_
+â‰» ${pref++} ${prefix}twitter _<url>_
+â‰» ${pref++} ${prefix}twittermp3 _<url>_
+â‰» ${pref++} ${prefix}facebook _<url>_
+â‰» ${pref++} ${prefix}pinterestdl _<url>_
+â‰» ${pref++} ${prefix}ytmp3 _<url>_
+â‰» ${pref++} ${prefix}ytmp4 _<url>_
+â‰» ${pref++} ${prefix}getmusic _<Query>_
+â‰» ${pref++} ${prefix}getvideo _<Query>_
+â‰» ${pref++} ${prefix}umma _<url>_
+â‰» ${pref++} ${prefix}joox _<Query>_
+â‰» ${pref++} ${prefix}soundcloud _<url>_
+â‰» ${pref++} ${prefix}ytsearch2
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Search Menu*
 
-${pref++} ${prefix}play _<Query>_
-${pref++} ${prefix}yts _<Query>_
-${pref++} ${prefix}google _<Query>_
-${pref++} ${prefix}gimage _<Query>_
-${pref++} ${prefix}pinterest _<Query>_
-${pref++} ${prefix}wallpaper _<Query>_
-${pref++} ${prefix}wikimedia _<Query>_
-${pref++} ${prefix}ytsearch _<Query>_
-${pref++} ${prefix}ringtone _<Query>_
-${pref++} ${prefix}stalk [option] _<Query>_
+â‰» ${pref++} ${prefix}play _<Query>_
+â‰» ${pref++} ${prefix}yts _<Query>_
+â‰» ${pref++} ${prefix}google _<Query>_
+â‰» ${pref++} ${prefix}gimage _<Query>_
+â‰» ${pref++} ${prefix}pinterest _<Query>_
+â‰» ${pref++} ${prefix}wallpaper _<Query>_
+â‰» ${pref++} ${prefix}wikimedia _<Query>_
+â‰» ${pref++} ${prefix}ytsearch _<Query>_
+â‰» ${pref++} ${prefix}ringtone _<Query>_
+â‰» ${pref++} ${prefix}stalk [option] _<Query>_
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Random Menu*
 
-${pref++} ${prefix}coffe
-${pref++} ${prefix}quotesanime
-${pref++} ${prefix}motivasi
-${pref++} ${prefix}dilanquote
-${pref++} ${prefix}bucinquote
-${pref++} ${prefix}katasenja
-${pref++} ${prefix}puisi
-${pref++} ${prefix}couple
-${pref++} ${prefix}anime
-${pref++} ${prefix}waifu
-${pref++} ${prefix}husbu
-${pref++} ${prefix}neko
-${pref++} ${prefix}shinobu
-${pref++} ${prefix}waifus (nsfw)
-${pref++} ${prefix}nekos (nsfw)
-${pref++} ${prefix}trap (nsfw)
-${pref++} ${prefix}blowjob (nsfw)
+â‰» ${pref++} ${prefix}coffe
+â‰» ${pref++} ${prefix}quotesanime
+â‰» ${pref++} ${prefix}motivasi
+â‰» ${pref++} ${prefix}dilanquote
+â‰» ${pref++} ${prefix}bucinquote
+â‰» ${pref++} ${prefix}katasenja
+â‰» ${pref++} ${prefix}puisi
+â‰» ${pref++} ${prefix}couple
+â‰» ${pref++} ${prefix}anime
+â‰» ${pref++} ${prefix}waifu
+â‰» ${pref++} ${prefix}husbu
+â‰» ${pref++} ${prefix}neko
+â‰» ${pref++} ${prefix}shinobu
+â‰» ${pref++} ${prefix}waifus (nsfw)
+â‰» ${pref++} ${prefix}nekos (nsfw)
+â‰» ${pref++} ${prefix}trap (nsfw)
+â‰» ${pref++} ${prefix}blowjob (nsfw)
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Text Pro Menu*
 
-${pref++} ${prefix}3dchristmas
-${pref++} ${prefix}3ddeepsea
-${pref++} ${prefix}americanflag
-${pref++} ${prefix}3dscifi
-${pref++} ${prefix}3drainbow
-${pref++} ${prefix}3dwaterpipe
-${pref++} ${prefix}halloweenskeleton
-${pref++} ${prefix}sketch
-${pref++} ${prefix}bluecircuit
-${pref++} ${prefix}space
-${pref++} ${prefix}metallic
-${pref++} ${prefix}fiction
-${pref++} ${prefix}greenhorror
-${pref++} ${prefix}transformer
-${pref++} ${prefix}berry
-${pref++} ${prefix}thunder
-${pref++} ${prefix}magma
-${pref++} ${prefix}3dcrackedstone
-${pref++} ${prefix}3dneonlight
-${pref++} ${prefix}impressiveglitch
-${pref++} ${prefix}naturalleaves
-${pref++} ${prefix}fireworksparkle
-${pref++} ${prefix}matrix
-${pref++} ${prefix}dropwater
-${pref++} ${prefix}harrypotter
-${pref++} ${prefix}foggywindow
-${pref++} ${prefix}neondevils
-${pref++} ${prefix}christmasholiday
-${pref++} ${prefix}3dgradient
- ${pref++} ${prefix}blackpink
-${pref++} ${prefix}gluetext
+â‰» ${pref++} ${prefix}3dchristmas
+â‰» ${pref++} ${prefix}3ddeepsea
+â‰» ${pref++} ${prefix}americanflag
+â‰» ${pref++} ${prefix}3dscifi
+â‰» ${pref++} ${prefix}3drainbow
+â‰» ${pref++} ${prefix}3dwaterpipe
+â‰» ${pref++} ${prefix}halloweenskeleton
+â‰» ${pref++} ${prefix}sketch
+â‰» ${pref++} ${prefix}bluecircuit
+â‰» ${pref++} ${prefix}space
+â‰» ${pref++} ${prefix}metallic
+â‰» ${pref++} ${prefix}fiction
+â‰» ${pref++} ${prefix}greenhorror
+â‰» ${pref++} ${prefix}transformer
+â‰» ${pref++} ${prefix}berry
+â‰» ${pref++} ${prefix}thunder
+â‰» ${pref++} ${prefix}magma
+â‰» ${pref++} ${prefix}3dcrackedstone
+â‰» ${pref++} ${prefix}3dneonlight
+â‰» ${pref++} ${prefix}impressiveglitch
+â‰» ${pref++} ${prefix}naturalleaves
+â‰» ${pref++} ${prefix}fireworksparkle
+â‰» ${pref++} ${prefix}matrix
+â‰» ${pref++} ${prefix}dropwater
+â‰» ${pref++} ${prefix}harrypotter
+â‰» ${pref++} ${prefix}foggywindow
+â‰» ${pref++} ${prefix}neondevils
+â‰» ${pref++} ${prefix}christmasholiday
+â‰» ${pref++} ${prefix}3dgradient
+â‰» ${pref++} ${prefix}blackpink
+â‰» ${pref++} ${prefix}gluetext
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Photo Oxy Menu*
 
-${pref++} ${prefix}shadow
-${pref++} ${prefix}romantic
-${pref++} ${prefix}smoke
-${pref++} ${prefix}burnpapper
-${pref++} ${prefix}naruto
-${pref++} ${prefix}lovemsg
-${pref++} ${prefix}grassmsg
-${pref++} ${prefix}lovetext
-${pref++} ${prefix}coffecup
-${pref++} ${prefix}butterfly
-${pref++} ${prefix}harrypotter
-${pref++} ${prefix}retrolol
+â‰» ${pref++} ${prefix}shadow
+â‰» ${pref++} ${prefix}romantic
+â‰» ${pref++} ${prefix}smoke
+â‰» ${pref++} ${prefix}burnpapper
+â‰» ${pref++} ${prefix}naruto
+â‰» ${pref++} ${prefix}lovemsg
+â‰» ${pref++} ${prefix}grassmsg
+â‰» ${pref++} ${prefix}lovetext
+â‰» ${pref++} ${prefix}coffecup
+â‰» ${pref++} ${prefix}butterfly
+â‰» ${pref++} ${prefix}harrypotter
+â‰» ${pref++} ${prefix}retrolol
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Ephoto Menu*
 
-${pref++} ${prefix}ffcover
-${pref++} ${prefix}crossfire
-${pref++} ${prefix}galaxy
-${pref++} ${prefix}glass
-${pref++} ${prefix}neon
-${pref++} ${prefix}beach
-${pref++} ${prefix}blackpink
-${pref++} ${prefix}igcertificate
-${pref++} ${prefix}ytcertificate
+â‰» ${pref++} ${prefix}ffcover
+â‰» ${pref++} ${prefix}crossfire
+â‰» ${pref++} ${prefix}galaxy
+â‰» ${pref++} ${prefix}glass
+â‰» ${pref++} ${prefix}neon
+â‰» ${pref++} ${prefix}beach
+â‰» ${pref++} ${prefix}blackpink
+â‰» ${pref++} ${prefix}igcertificate
+â‰» ${pref++} ${prefix}ytcertificate
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Tolls Menu*
 
- ${pref++} ${prefix}infogempa
+â‰» ${pref++} ${prefix}infogempa
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Fun Menu*
 
-${pref++} ${prefix}halah
-${pref++} ${prefix}hilih
-${pref++} ${prefix}huluh
-${pref++} ${prefix}heleh
-${pref++} ${prefix}holoh
-${pref++} ${prefix}jadian
-${pref++} ${prefix}jodohku
-${pref++} ${prefix}delttt
-${pref++} ${prefix}tictactoe
-${pref++} ${prefix}family100
-${pref++} ${prefix}tebak [option]
-${pref++} ${prefix}math [mode]
-${pref++} ${prefix}suitpvp [@tag]
+â‰» ${pref++} ${prefix}halah
+â‰» ${pref++} ${prefix}hilih
+â‰» ${pref++} ${prefix}huluh
+â‰» ${pref++} ${prefix}heleh
+â‰» ${pref++} ${prefix}holoh
+â‰» ${pref++} ${prefix}jadian
+â‰» ${pref++} ${prefix}jodohku
+â‰» ${pref++} ${prefix}delttt
+â‰» ${pref++} ${prefix}tictactoe
+â‰» ${pref++} ${prefix}family100
+â‰» ${pref++} ${prefix}tebak [option]
+â‰» ${pref++} ${prefix}math [mode]
+â‰» ${pref++} ${prefix}suitpvp [@tag]
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Primbon Menu*
 
-${pref++} ${prefix}nomorhoki
-${pref++} ${prefix}artimimpi
-${pref++} ${prefix}artinama
-${pref++} ${prefix}ramaljodoh
-${pref++} ${prefix}ramaljodohbali
-${pref++} ${prefix}suamiistri
-${pref++} ${prefix}ramalcinta
-${pref++} ${prefix}cocoknama
-${pref++} ${prefix}pasangan
-${pref++} ${prefix}jadiannikah
-${pref++} ${prefix}sifatusaha
-${pref++} ${prefix}rezeki
-${pref++} ${prefix}pekerjaan
-${pref++} ${prefix}nasib
-${pref++} ${prefix}penyakit
-${pref++} ${prefix}tarot
-${pref++} ${prefix}fengshui
-${pref++} ${prefix}haribaik
-${pref++} ${prefix}harisangar
-${pref++} ${prefix}harisial
-${pref++} ${prefix}nagahari
-${pref++} ${prefix}arahrezeki
-${pref++} ${prefix}peruntungan
-${pref++} ${prefix}weton
-${pref++} ${prefix}karakter
-${pref++} ${prefix}keberuntungan
-${pref++} ${prefix}memancing
-${pref++} ${prefix}masasubur
-${pref++} ${prefix}zodiak
-${pref++} ${prefix}shio
+â‰» ${pref++} ${prefix}nomorhoki
+â‰» ${pref++} ${prefix}artimimpi
+â‰» ${pref++} ${prefix}artinama
+â‰» ${pref++} ${prefix}ramaljodoh
+â‰» ${pref++} ${prefix}ramaljodohbali
+â‰» ${pref++} ${prefix}suamiistri
+â‰» ${pref++} ${prefix}ramalcinta
+â‰» ${pref++} ${prefix}cocoknama
+â‰» ${pref++} ${prefix}pasangan
+â‰» ${pref++} ${prefix}jadiannikah
+â‰» ${pref++} ${prefix}sifatusaha
+â‰» ${pref++} ${prefix}rezeki
+â‰» ${pref++} ${prefix}pekerjaan
+â‰» ${pref++} ${prefix}nasib
+â‰» ${pref++} ${prefix}penyakit
+â‰» ${pref++} ${prefix}tarot
+â‰» ${pref++} ${prefix}fengshui
+â‰» ${pref++} ${prefix}haribaik
+â‰» ${pref++} ${prefix}harisangar
+â‰» ${pref++} ${prefix}harisial
+â‰» ${pref++} ${prefix}nagahari
+â‰» ${pref++} ${prefix}arahrezeki
+â‰» ${pref++} ${prefix}peruntungan
+â‰» ${pref++} ${prefix}weton
+â‰» ${pref++} ${prefix}karakter
+â‰» ${pref++} ${prefix}keberuntungan
+â‰» ${pref++} ${prefix}memancing
+â‰» ${pref++} ${prefix}masasubur
+â‰» ${pref++} ${prefix}zodiak
+â‰» ${pref++} ${prefix}shio
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Convert Menu*
 
-${pref++} ${prefix}toimage
-${pref++} ${prefix}removebg
-${pref++} ${prefix}sticker
-${pref++} ${prefix}emojimix
-${pref++} ${prefix}tovideo
-${pref++} ${prefix}togif
-${pref++} ${prefix}tourl
-${pref++} ${prefix}tovn
-${pref++} ${prefix}tomp3
-${pref++} ${prefix}toaudio
-${pref++} ${prefix}ebinary
-${pref++} ${prefix}dbinary
-${pref++} ${prefix}styletext
+â‰» ${pref++} ${prefix}toimage
+â‰» ${pref++} ${prefix}removebg
+â‰» ${pref++} ${prefix}sticker
+â‰» ${pref++} ${prefix}emojimix
+â‰» ${pref++} ${prefix}tovideo
+â‰» ${pref++} ${prefix}togif
+â‰» ${pref++} ${prefix}tourl
+â‰» ${pref++} ${prefix}tovn
+â‰» ${pref++} ${prefix}tomp3
+â‰» ${pref++} ${prefix}toaudio
+â‰» ${pref++} ${prefix}ebinary
+â‰» ${pref++} ${prefix}dbinary
+â‰» ${pref++} ${prefix}styletext
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Main Menu*
 
-${pref++} ${prefix}ping
-${pref++} ${prefix}owner
-${pref++} ${prefix}menu / ${prefix}help / ${prefix}?
-${pref++} ${prefix}delete
-${pref++} ${prefix}infochat
-${pref++} ${prefix}quoted
-${pref++} ${prefix}listpc
-${pref++} ${prefix}listgc
-${pref++} ${prefix}listonline
-${pref++} ${prefix}donasi
+â‰» ${pref++} ${prefix}ping
+â‰» ${pref++} ${prefix}owner
+â‰» ${pref++} ${prefix}menu / ${prefix}help / ${prefix}?
+â‰» ${pref++} ${prefix}delete
+â‰» ${pref++} ${prefix}infochat
+â‰» ${pref++} ${prefix}quoted
+â‰» ${pref++} ${prefix}listpc
+â‰» ${pref++} ${prefix}listgc
+â‰» ${pref++} ${prefix}listonline
+â‰» ${pref++} ${prefix}donasi
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Database Menu*
 
-${pref++} ${prefix}setcmd
-${pref++} ${prefix}listcmd
-${pref++} ${prefix}delcmd
-${pref++} ${prefix}lockcmd
-${pref++} ${prefix}addmsg
-${pref++} ${prefix}listmsg
-${pref++} ${prefix}getmsg
-${pref++} ${prefix}delmsg
+â‰» ${pref++} ${prefix}setcmd
+â‰» ${pref++} ${prefix}listcmd
+â‰» ${pref++} ${prefix}delcmd
+â‰» ${pref++} ${prefix}lockcmd
+â‰» ${pref++} ${prefix}addmsg
+â‰» ${pref++} ${prefix}listmsg
+â‰» ${pref++} ${prefix}getmsg
+â‰» ${pref++} ${prefix}delmsg
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Anonymous Menu*
 
-${pref++} ${prefix}anonymous
-${pref++} ${prefix}start
-${pref++} ${prefix}next
-${pref++} ${prefix}keluar
-${pref++} ${prefix}sendkontak
+â‰» ${pref++} ${prefix}anonymous
+â‰» ${pref++} ${prefix}start
+â‰» ${pref++} ${prefix}next
+â‰» ${pref++} ${prefix}keluar
+â‰» ${pref++} ${prefix}sendkontak
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Islamic Menu*
 
-${pref++} ${prefix}iqra
-$pref++} ${prefix}hadist
-${pref++} ${prefix}alquran
-${pref++} ${prefix}juzamma
-${pref++} ${prefix}tafsirsurah
+â‰» ${pref++} ${prefix}iqra
+â‰» ${pref++} ${prefix}hadist
+â‰» ${pref++} ${prefix}alquran
+â‰» ${pref++} ${prefix}juzamma
+â‰» ${pref++} ${prefix}tafsirsurah
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Voice Changer*
 
-${pref++} ${prefix}bass
-${pref++} ${prefix}blown
-${pref++} ${prefix}deep
-${pref++} ${prefix}earrape
-${pref++} ${prefix}fast
-${pref++} ${prefix}fat
-${pref++} ${prefix}nightcore
-${pref++} ${prefix}reverse
-${pref++} ${prefix}robot
-${pref++} ${prefix}slow
-${pref++} ${prefix}tupai
+â‰» ${pref++} ${prefix}bass
+â‰» ${pref++} ${prefix}blown
+â‰» ${pref++} ${prefix}deep
+â‰» ${pref++} ${prefix}earrape
+â‰» ${pref++} ${prefix}fast
+â‰» ${pref++} ${prefix}fat
+â‰» ${pref++} ${prefix}nightcore
+â‰» ${pref++} ${prefix}reverse
+â‰» ${pref++} ${prefix}robot
+â‰» ${pref++} ${prefix}slow
+â‰» ${pref++} ${prefix}tupai
 
 â””â”€â”€â”€â‘
 
 â”Œâ”€â”€â”€â‘ *Owner Menu*
 
-${pref++} ${prefix}chat [option]
-${pref++} ${prefix}join [link]
-${pref++} ${prefix}leave
-${pref++} ${prefix}block @user
-${pref++} ${prefix}unblock @user
-${pref++} ${prefix}bcgroup _<Text>_
-${pref++} ${prefix}bcall _<Text>_
-${pref++} ${prefix}bcimg  _<Image & Text>_
-${pref++} ${prefix}bcvid  _<Vidio & Text>_
-${pref++} ${prefix}bcaudio _<Audio>_
-${pref++} ${prefix}setppbot [image]
-${pref++} ${prefix}setexif
+â‰» ${pref++} ${prefix}chat [option]
+â‰» ${pref++} ${prefix}join [link]
+â‰» ${pref++} ${prefix}leave
+â‰» ${pref++} ${prefix}block @user
+â‰» ${pref++} ${prefix}unblock @user
+â‰» ${pref++} ${prefix}bcgroup _<Text>_
+â‰» ${pref++} ${prefix}bcall _<Text>_
+â‰» ${pref++} ${prefix}bcimg  _<Image & Text>_
+â‰» ${pref++} ${prefix}bcvid  _<Vidio & Text>_
+â‰» ${pref++} ${prefix}bcaudio _<Audio>_
+â‰» ${pref++} ${prefix}setppbot [image]
+â‰» ${pref++} ${prefix}setexif
 
 â””â”€â”€â”€â‘`
                 let btn = [{
                                 urlButton: {
                                     displayText: 'S C R I P T',
-                                    url: 'https://github.com/manzofc/manzmd2'
+                                    url: 'https://github.com/Nakataaard/MD2'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3146,9 +3147,9 @@ let sectionnya= [{
 								]
 							}
 						]
-hisoka.sendList(m.chat, `Halo ${pushname}`, `‘ INFO BOT
+hisoka.sendList(m.chat, `Halo ${pushname}`, INFO BOT
 
-LIBRAY:  *Manz  MD*`, "Manz", "List Bot", sectionnya, { quoted: m})
+LIBRAY:  *Manz  MD*`, "Nakataa", "List Bot ", sectionnya, { quoted: m})
 break
 case 'grupmenu': {
 	            anu = `
@@ -3166,7 +3167,7 @@ case 'grupmenu': {
   ${prefix}promote @user
   ${prefix}demote @user
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'downloadmenu': {
@@ -3189,7 +3190,7 @@ case 'downloadmenu': {
   ${prefix}getmusic _<query>_
   ${prefix}getvideo _<query>_  
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
             break 
             case 'searchmenu': {
@@ -3205,7 +3206,7 @@ case 'downloadmenu': {
   ${prefix}wikimedia _<query>_
   ${prefix}ytsearch _<query>_
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'randommenu': {
@@ -3222,7 +3223,7 @@ case 'randommenu': {
   ${prefix}katasenja
   ${prefix}puisi
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'imagemenu': {
@@ -3236,7 +3237,7 @@ case 'imagemenu': {
   ${prefix}shinobu
   ${prefix}megumin
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'funmenu': {
@@ -3254,7 +3255,7 @@ case 'funmenu': {
   ${prefix}tebak [option]
   ${prefix}math [mode]  
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'voicemenu': {
@@ -3273,7 +3274,7 @@ ${prefix}robot
 ${prefix}slow
 ${prefix}tupai
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'religionmenu': {
@@ -3290,7 +3291,7 @@ ${prefix}tafsirsurah
 _Kristian_
 ${prefix}alkitab
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'immageemenu':  {
@@ -3301,7 +3302,7 @@ ${prefix}meme
 ${prefix}ppcouple
 ${prefix}darkjoke
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'tollsmenu': {
@@ -3312,7 +3313,7 @@ ${prefix}ssweb-hp
 ${prefix}ssweb-pc
 ${prefix}translate
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 
@@ -3351,7 +3352,7 @@ case 'primbonmenu': {
   ${prefix}zodiak
   ${prefix}shio
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'convertmenu': {
@@ -3373,7 +3374,7 @@ ${prefix}dbinary
 ${prefix}styletext
 ${prefix}ttp
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'nocategorymenu': {
@@ -3390,7 +3391,7 @@ case 'nocategorymenu': {
   ${prefix}listgc
   ${prefix}listonline
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'ephotomenu': {
@@ -3407,7 +3408,7 @@ ${prefix}blackpink
 ${prefix}igcertificate
 ${prefix}ytcertificate
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'textpromenu': {
@@ -3446,7 +3447,7 @@ ${prefix}3dgradient
 ${prefix}blackpink
 ${prefix}gluetext
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'databasemenu': {
@@ -3462,7 +3463,7 @@ case 'databasemenu': {
   ${prefix}getmsg
   ${prefix}delmsg
   `
-  textTemplateButtons(m.chat, anu, `Manz`, btn)
+  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'anonymouschatmenu': {
@@ -3473,7 +3474,7 @@ case 'anonymouschatmenu': {
 	${prefix}stop ( stop anonymous chat )
 	${prefix}sendkontak ( Khusus Di Dalam Room Anonymous chat )
 	`
-	  textTemplateButtons(m.chat, anu, `Manz`, btn)
+	  textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'sistemmenu': {
@@ -3482,7 +3483,7 @@ ${prefix}antilink On/Off
 ${prefix}mute On/Off
 ${prefix}antiwame On/Off
 `
-textTemplateButtons(m.chat, anu, `Manz`, btn)
+textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
   case 'ownermenu': {
@@ -3501,7 +3502,7 @@ ${prefix}autobio On/Off
 ${prefix}autoread On/Off
 ${prefix}autoketik On/Off
   `
-    textTemplateButtons(m.chat, anu, `Manz`, btn)
+    textTemplateButtons(m.chat, anu, `Nakataa`, btn)
             }
 break
 case 'tqtt': 
