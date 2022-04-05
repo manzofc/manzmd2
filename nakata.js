@@ -25,7 +25,7 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 let btn = [{
                                 urlButton: {
                                     displayText: `Github`,
-                                    url: `https://github.com/manzofc`
+                                    url: `https://github.com/Nakataaard`
                                 }
                             }, {
                                 quickReplyButton: {
@@ -163,7 +163,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
-        reply(` ANTI LINK \n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
+        reply(`ANTI LINK \n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
         if (!isBotAdmins) return reply(`Jadiin admin dulu bjir`)
         let gclink = (`https://chat.whatsapp.com/`+await hisoka.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
@@ -273,7 +273,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakkalimat[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], ` Tebak Kalimat \n\nJawaban Benar \n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `ðŸŽ® Tebak Kalimat ðŸŽ®\n\nJawaban Benar ðŸŽ‰\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
                 delete tebakkalimat[m.sender.split('@')[0]]
             } else reply('*Jawaban Salah!*')
         }
@@ -282,7 +282,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaklirik[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `Tebak Lirik \n\nJawaban Benar \n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `ðŸŽ® Tebak Lirik ðŸŽ®\n\nJawaban Benar ðŸŽ‰\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
                 delete tebaklirik[m.sender.split('@')[0]]
             } else reply('*Jawaban Salah!*')
         }
@@ -291,7 +291,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaktebakan[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], ` Tebak Tebakan \n\nJawaban Benar \n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
+                await hisoka.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `ðŸŽ® Tebak Tebakan ðŸŽ®\n\nJawaban Benar ðŸŽ‰\n\nIngin bermain lagi? tekan button dibawah`, hisoka.user.name, m)
                 delete tebaktebakan[m.sender.split('@')[0]]
             } else reply('*Jawaban Salah!*')
         }
@@ -559,11 +559,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n 7k Per Group via E-Walet 1 Month\n 10k via pulsa 1 Month\n\n Premium Price Bot\n 2k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\ Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n Gopay/ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\ 7k Per Group via E-Walet 1 Tahun\10k via pulsa 1 Tahun\n\n Premium Price Bot\1k per User 1 bulan\n\nPayment can be via Dana/Gopay/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6283830930651 (Owner)\n\nDonate For Me : \n\Dana : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\nAllpay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg` }, { quoted: m })
             }
             break
             case 'sc': {
-                reply('Script : https://github.com/manzofc/manzmd2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\ndana/gopay/ovo : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n\n Dont Forget Donate')
+                reply('Script :  https://github.com/manzofc/manzmd2\n\n Dont Forget Give Star\n\nDonate : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg (Dana)\nAllpay : https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -1154,7 +1154,7 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/manzofc/MD2'
+                                    url: 'https://github.com/Nakataaard/MD2'
                                 }
                             }, {
                                 callButton: {
@@ -1177,7 +1177,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      let txt = ` Broadcast Bot \n\n${text}`
+                      let txt = `ã€Œ Broadcast Bot ã€\n\n${text}`
                       hisoka.send5ButImg(i, txt, hisoka.user.name, global.thumb, btn)
                     }
                 reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
@@ -1255,7 +1255,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                                     id: 'sc'
                                 }
                             }]
-                      let txt = `Broadcast Bot \n\n${text}`
+                      let txt = `ã€Œ Broadcast Bot ã€\n\n${text}`
                       hisoka.send5ButImg(yoi, txt, hisoka.user.name, global.thumb, btn)
 		}
 		reply('Sukses Broadcast')
@@ -1270,8 +1270,8 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                     let read = i.readTimestamp
                     let unread = i.receiptTimestamp
                     let waktu = read ? read : unread
-                    teks += `@${i.userJid.split('@')[0]}\n`
-                    teks += `*Waktu :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} *Status :* ${read ? 'Dibaca' : 'Terkirim'}\n\n`
+                    teks += `â­” @${i.userJid.split('@')[0]}\n`
+                    teks += ` â”—â”â­” *Waktu :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} â­” *Status :* ${read ? 'Dibaca' : 'Terkirim'}\n\n`
                 }
                 hisoka.sendTextWithMentions(m.chat, teks, m)
             }
@@ -1288,7 +1288,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                  let teks = `â¬£ *LIST PERSONAL CHAT*\n\nTotal Chat : ${anu.length} Chat\n\n`
                  for (let i of anu) {
                      let nama = store.messages[i].array[0].pushName
-                     teks += `*Nama :* ${nama}\n*User :* @${i.split('@')[0]}\n*Chat :* https://wa.me/${i.split('@')[0]}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
+                     teks += `â¬¡ *Nama :* ${nama}\nâ¬¡ *User :* @${i.split('@')[0]}\nâ¬¡ *Chat :* https://wa.me/${i.split('@')[0]}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
                  }
                  hisoka.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1298,7 +1298,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
                  let teks = `â¬£ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await hisoka.groupMetadata(i)
-                     teks += `*Nama :* ${metadata.subject}\n*Owner :* @${metadata.owner.split('@')[0]}\n*ID :* ${metadata.id}\n*Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n*Member :* ${metadata.participants.length}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
+                     teks += `â¬¡ *Nama :* ${metadata.subject}\nâ¬¡ *Owner :* @${metadata.owner.split('@')[0]}\nâ¬¡ *ID :* ${metadata.id}\nâ¬¡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\nâ¬¡ *Member :* ${metadata.participants.length}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
                  }
                  hisoka.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1478,13 +1478,13 @@ let yts = require("yt-search")
             const data = await yts(q);
 for(let a of data.all) {
 list_rows.push({
-title: a.title, deion: `Channel: ${a.author.name} | Durasi: ${a.duration}`, rowId: `${prefix}play ${a.url}`
+title: a.title, description: `Channel: ${a.author.name} | Durasi: ${a.duration}`, rowId: `${prefix}play ${a.url}`
 })
 }
     const button = {
         title: `Hasil Pencarian Dari ${q}`,
         description: "Silahkan Tap Tombol Dibawah!",
-        footerText: `Create by MANZ`,
+        footerText: `Create by Nakata`,
         buttonText: 'Tap Disini!',
         listType: 'SINGLE_SELECT',
         sections: [
@@ -1504,7 +1504,7 @@ break
                 let teks = `Google Search From : ${text}\n\n`
                 for (let g of res) {
                 teks += `â­” *Title* : ${g.title}\n`
-                teks += `â*Description* : ${g.snippet}\n`
+                teks += `â­” *Description* : ${g.snippet}\n`
                 teks += `â­” *Link* : ${g.link}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
                 } 
                 reply(teks)
@@ -1523,8 +1523,8 @@ break
                 let buttonMessage = {
                     image: { url: images },
                     caption: `*-------ã€Œ GIMAGE SEARCH ã€-------*
- *Query* : ${text}
- *Media Url* : ${images}`,
+ðŸ¤  *Query* : ${text}
+ðŸ”— *Media Url* : ${images}`,
                     footer: hisoka.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2447,7 +2447,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             case 'listmsg': {
                 let msgs = JSON.parse(fs.readFileSync('./src/database.json'))
 	        let seplit = Object.entries(global.db.data.database).map(([nama, isi]) => { return { nama, ...isi } })
-		let teks = 'LIST DATABASE \n\n'
+		let teks = 'ã€Œ LIST DATABASE ã€\n\n'
 		for (let i of seplit) {
 		    teks += `â¬¡ *Name :* ${i.nama}\nâ¬¡ *Type :* ${getContentType(i.message).replace(/Message/i, '')}\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n`
 	        }
@@ -2618,7 +2618,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 respon = `
 Kecepatan Respon ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
 
- Info Server
+ðŸ’» Info Server
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
 
 _NodeJS Memory Usaage_
@@ -2654,11 +2654,11 @@ m.reply(`ðŸ‘·Translate : ${Detek}\nðŸ”ŽHasil : ${Infoo}`)
 case 'donasi':
 tekssa = `Halo @${m.sender.split("@s.whatsapp.net")[0]} ðŸ‘‹
 Berikut adalah list harga untuk sewa bot ini
-*Payment*
-*Gopay:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*Dana:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*Ovo:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
-*Pulsa:* 083830930651
+*ðŸ’¸PaymentðŸ’°*
+*â€¢Gopay:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*â€¢Dana:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*â€¢Ovo:* https://uploader.caliph.my.id/file/k0RE6hoXH7.jpg
+*â€¢Pulsa:* 083830930651(Up +5)
 
 *Note:
 =>Untuk Sewa/Memasukkan Bot Kedalam Group, cukup membayar Rp7.000
@@ -2670,17 +2670,17 @@ break
             case 'list': case 'menu': case 'help': case '?': {
             	pref = 1
                 anu = `
- *Bot Info*       
+â•­â”€ *Bot Info* â”€â•®       
 
 Libray : *Baileys Multi Device*
-Name Bot : *MANZ-MD*
-Creator : *MANZ*
-Author : *MANZ.*
+Name Bot : *Manz-MD*
+Creator : *Manz*
+Author : *Manz.*
 User Total : *${Object.keys(global.db.data.users).length}*
  
-•MANZEK•
+â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯
 
- *Group Menu*
+â”Œâ”€â”€â”€â‘ *Group Menu*
 
 ${pref++} ${prefix}linkgroup
 ${pref++} ${prefix}ephemeral [option]
@@ -2703,9 +2703,9 @@ ${pref++} ${prefix}upvote
 ${pref++} ${prefix}cekvote
 ${pref++} ${prefix}hapusvote
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Downloader Menu*
+â”Œâ”€â”€â”€â‘ *Downloader Menu*
 
 ${pref++} ${prefix}tiktoknowm _<url>_
 ${pref++} ${prefix}tiktokwm _<url>_
@@ -2724,9 +2724,9 @@ ${pref++} ${prefix}joox _<Query>_
 ${pref++} ${prefix}soundcloud _<url>_
 ${pref++} ${prefix}ytsearch2
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Search Menu*
+â”Œâ”€â”€â”€â‘ *Search Menu*
 
 ${pref++} ${prefix}play _<Query>_
 ${pref++} ${prefix}yts _<Query>_
@@ -2739,9 +2739,9 @@ ${pref++} ${prefix}ytsearch _<Query>_
 ${pref++} ${prefix}ringtone _<Query>_
 ${pref++} ${prefix}stalk [option] _<Query>_
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Random Menu*
+â”Œâ”€â”€â”€â‘ *Random Menu*
 
 ${pref++} ${prefix}coffe
 ${pref++} ${prefix}quotesanime
@@ -2761,9 +2761,9 @@ ${pref++} ${prefix}nekos (nsfw)
 ${pref++} ${prefix}trap (nsfw)
 ${pref++} ${prefix}blowjob (nsfw)
 
-MANZ
+â””â”€â”€â”€â‘
 
-*Text Pro Menu*
+â”Œâ”€â”€â”€â‘ *Text Pro Menu*
 
 ${pref++} ${prefix}3dchristmas
 ${pref++} ${prefix}3ddeepsea
@@ -2797,9 +2797,9 @@ ${pref++} ${prefix}3dgradient
  ${pref++} ${prefix}blackpink
 ${pref++} ${prefix}gluetext
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Photo Oxy Menu*
+â”Œâ”€â”€â”€â‘ *Photo Oxy Menu*
 
 ${pref++} ${prefix}shadow
 ${pref++} ${prefix}romantic
@@ -2814,9 +2814,9 @@ ${pref++} ${prefix}butterfly
 ${pref++} ${prefix}harrypotter
 ${pref++} ${prefix}retrolol
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Ephoto Menu*
+â”Œâ”€â”€â”€â‘ *Ephoto Menu*
 
 ${pref++} ${prefix}ffcover
 ${pref++} ${prefix}crossfire
@@ -2828,15 +2828,15 @@ ${pref++} ${prefix}blackpink
 ${pref++} ${prefix}igcertificate
 ${pref++} ${prefix}ytcertificate
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Tolls Menu*
+â”Œâ”€â”€â”€â‘ *Tolls Menu*
 
-${pref++} ${prefix}infogempa
+ ${pref++} ${prefix}infogempa
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Fun Menu*
+â”Œâ”€â”€â”€â‘ *Fun Menu*
 
 ${pref++} ${prefix}halah
 ${pref++} ${prefix}hilih
@@ -2852,9 +2852,9 @@ ${pref++} ${prefix}tebak [option]
 ${pref++} ${prefix}math [mode]
 ${pref++} ${prefix}suitpvp [@tag]
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Primbon Menu*
+â”Œâ”€â”€â”€â‘ *Primbon Menu*
 
 ${pref++} ${prefix}nomorhoki
 ${pref++} ${prefix}artimimpi
@@ -2887,9 +2887,9 @@ ${pref++} ${prefix}masasubur
 ${pref++} ${prefix}zodiak
 ${pref++} ${prefix}shio
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Convert Menu*
+â”Œâ”€â”€â”€â‘ *Convert Menu*
 
 ${pref++} ${prefix}toimage
 ${pref++} ${prefix}removebg
@@ -2907,7 +2907,7 @@ ${pref++} ${prefix}styletext
 
 â””â”€â”€â”€â‘
 
- *Main Menu*
+â”Œâ”€â”€â”€â‘ *Main Menu*
 
 ${pref++} ${prefix}ping
 ${pref++} ${prefix}owner
@@ -2922,7 +2922,7 @@ ${pref++} ${prefix}donasi
 
 â””â”€â”€â”€â‘
 
- *Database Menu*
+â”Œâ”€â”€â”€â‘ *Database Menu*
 
 ${pref++} ${prefix}setcmd
 ${pref++} ${prefix}listcmd
@@ -2935,7 +2935,7 @@ ${pref++} ${prefix}delmsg
 
 â””â”€â”€â”€â‘
 
- *Anonymous Menu*
+â”Œâ”€â”€â”€â‘ *Anonymous Menu*
 
 ${pref++} ${prefix}anonymous
 ${pref++} ${prefix}start
@@ -2945,7 +2945,7 @@ ${pref++} ${prefix}sendkontak
 
 â””â”€â”€â”€â‘
 
- *Islamic Menu*
+â”Œâ”€â”€â”€â‘ *Islamic Menu*
 
 ${pref++} ${prefix}iqra
 $pref++} ${prefix}hadist
@@ -2953,9 +2953,9 @@ ${pref++} ${prefix}alquran
 ${pref++} ${prefix}juzamma
 ${pref++} ${prefix}tafsirsurah
 
-MANZ
+â””â”€â”€â”€â‘
 
- *Voice Changer*
+â”Œâ”€â”€â”€â‘ *Voice Changer*
 
 ${pref++} ${prefix}bass
 ${pref++} ${prefix}blown
@@ -2969,9 +2969,9 @@ ${pref++} ${prefix}robot
 ${pref++} ${prefix}slow
 ${pref++} ${prefix}tupai
 
-MANZ
+â””â”€â”€â”€â‘
 
-*Owner Menu*
+â”Œâ”€â”€â”€â‘ *Owner Menu*
 
 ${pref++} ${prefix}chat [option]
 ${pref++} ${prefix}join [link]
@@ -2986,7 +2986,7 @@ ${pref++} ${prefix}bcaudio _<Audio>_
 ${pref++} ${prefix}setppbot [image]
 ${pref++} ${prefix}setexif
 
-MANZ‘
+â””â”€â”€â”€â‘`
                 let btn = [{
                                 urlButton: {
                                     displayText: 'S C R I P T',
@@ -3146,9 +3146,9 @@ let sectionnya= [{
 								]
 							}
 						]
-hisoka.sendList(m.chat, `Halo ${pushname}`, `INFO BOT
+hisoka.sendList(m.chat, `Halo ${pushname}`, `‘ INFO BOT
 
-LIBRAY:  *MANZ  MD*`, "MANZ", "List Bot ", sectionnya, { quoted: m})
+LIBRAY:  *Manz  MD*`, "Manz", "List Bot", sectionnya, { quoted: m})
 break
 case 'grupmenu': {
 	            anu = `
@@ -3166,7 +3166,7 @@ case 'grupmenu': {
   ${prefix}promote @user
   ${prefix}demote @user
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'downloadmenu': {
@@ -3189,7 +3189,7 @@ case 'downloadmenu': {
   ${prefix}getmusic _<query>_
   ${prefix}getvideo _<query>_  
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
             break 
             case 'searchmenu': {
@@ -3205,7 +3205,7 @@ case 'downloadmenu': {
   ${prefix}wikimedia _<query>_
   ${prefix}ytsearch _<query>_
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'randommenu': {
@@ -3222,7 +3222,7 @@ case 'randommenu': {
   ${prefix}katasenja
   ${prefix}puisi
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'imagemenu': {
@@ -3236,7 +3236,7 @@ case 'imagemenu': {
   ${prefix}shinobu
   ${prefix}megumin
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'funmenu': {
@@ -3254,7 +3254,7 @@ case 'funmenu': {
   ${prefix}tebak [option]
   ${prefix}math [mode]  
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'voicemenu': {
@@ -3273,7 +3273,7 @@ ${prefix}robot
 ${prefix}slow
 ${prefix}tupai
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'religionmenu': {
@@ -3290,7 +3290,7 @@ ${prefix}tafsirsurah
 _Kristian_
 ${prefix}alkitab
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'immageemenu':  {
@@ -3301,7 +3301,7 @@ ${prefix}meme
 ${prefix}ppcouple
 ${prefix}darkjoke
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'tollsmenu': {
@@ -3312,7 +3312,7 @@ ${prefix}ssweb-hp
 ${prefix}ssweb-pc
 ${prefix}translate
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 
@@ -3351,7 +3351,7 @@ case 'primbonmenu': {
   ${prefix}zodiak
   ${prefix}shio
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'convertmenu': {
@@ -3373,7 +3373,7 @@ ${prefix}dbinary
 ${prefix}styletext
 ${prefix}ttp
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'nocategorymenu': {
@@ -3390,7 +3390,7 @@ case 'nocategorymenu': {
   ${prefix}listgc
   ${prefix}listonline
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'ephotomenu': {
@@ -3407,7 +3407,7 @@ ${prefix}blackpink
 ${prefix}igcertificate
 ${prefix}ytcertificate
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'textpromenu': {
@@ -3446,7 +3446,7 @@ ${prefix}3dgradient
 ${prefix}blackpink
 ${prefix}gluetext
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'databasemenu': {
@@ -3462,7 +3462,7 @@ case 'databasemenu': {
   ${prefix}getmsg
   ${prefix}delmsg
   `
-  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'anonymouschatmenu': {
@@ -3473,7 +3473,7 @@ case 'anonymouschatmenu': {
 	${prefix}stop ( stop anonymous chat )
 	${prefix}sendkontak ( Khusus Di Dalam Room Anonymous chat )
 	`
-	  textTemplateButtons(m.chat, anu, `MANZ`, btn)
+	  textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'sistemmenu': {
@@ -3482,7 +3482,7 @@ ${prefix}antilink On/Off
 ${prefix}mute On/Off
 ${prefix}antiwame On/Off
 `
-textTemplateButtons(m.chat, anu, `MANZ`, btn)
+textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
   case 'ownermenu': {
@@ -3501,7 +3501,7 @@ ${prefix}autobio On/Off
 ${prefix}autoread On/Off
 ${prefix}autoketik On/Off
   `
-    textTemplateButtons(m.chat, anu, `MANZ`, btn)
+    textTemplateButtons(m.chat, anu, `Manz`, btn)
             }
 break
 case 'tqtt': 
@@ -3509,7 +3509,6 @@ replay(`Thanks To
 DikaArdnt.
 Fatih Arridho.
 Deff
-Manz Bot
 Juna Bot
 NakataArdnt
 KurrXd
